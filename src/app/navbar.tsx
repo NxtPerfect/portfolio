@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function Nav() {
-  return <nav className="sticky top-0 w-full grid grid-cols-2 grid-rows-1 px-4 py-2 justify-between align-middle bg-black/50 backdrop-blur-md">
+  return <nav className="sticky top-0 w-full grid grid-cols-2 grid-rows-1 px-4 py-2 justify-between align-middle bg-black/50 backdrop-blur-md z-50">
     <div className="w-100 flex justify-self-center items-center">
       <p className="py-1 font-mono">To strive for the better is to be humane</p>
     </div>
