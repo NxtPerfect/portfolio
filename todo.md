@@ -1,0 +1,3 @@
+- [ ] Organize home page better
+- [ ] add projects from array
+- [ ] organize the scroll bar links to where they're in the project
