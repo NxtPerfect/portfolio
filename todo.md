@@ -1,3 +1,4 @@
 - [ ] Organize home page better
 - [ ] add projects from array
-- [ ] organize the scroll bar links to where they're in the project
+- [/] organize the scroll bar links to where they're in the project
+    - [ ] This kind of works, but the offset is wrong, projects end up at 40% height, instead of 75, as they're near the bottom
