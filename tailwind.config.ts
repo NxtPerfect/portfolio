@@ -21,9 +21,39 @@ const config: Config = {
             opacity: '1.0',
           },
         },
+        'move-left': {
+          from: {
+            left: '120svw',
+            transform: 'rotate(360deg)',
+          },
+          '50%': {
+            left: '-20svw',
+            transform: 'rotate(0deg)',
+          },
+          to: {
+            left: '120svw',
+            transform: 'rotate(360deg)',
+          }
+        },
+        'move-right': {
+          from: {
+            right: '120svw',
+            transform: 'rotate(120deg)',
+          },
+          '50%': {
+            right: '-20svw',
+            transform: 'rotate(0deg)',
+          },
+          to: {
+            right: '120svw',
+            transform: 'rotate(360deg)',
+          }
+        }
       },
       animation: {
         'move-bottom': 'move-bottom 1s ease .5s forwards',
+        'move-left': 'move-left 30s linear .5s infinite',
+        'move-right': 'move-right 30s linear .5s infinite',
       },
     },
   },

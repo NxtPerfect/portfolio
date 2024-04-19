@@ -1,4 +1,5 @@
-- [ ] Organize home page better
-- [ ] add projects from array
-- [/] organize the scroll bar links to where they're in the project
-    - [ ] This kind of works, but the offset is wrong, projects end up at 40% height, instead of 75, as they're near the bottom
+- [x] Organize home page better
+- [x] add projects from array
+- [x] organize the scroll bar links to where they're in the project
+    - [x] This kind of works, but the offset is wrong, projects end up at 40% height, instead of 75, as they're near the bottom
+- [ ] When clicking contact me opens up email app with credentials already in
