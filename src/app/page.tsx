@@ -25,8 +25,6 @@ export default function Home() {
     <>
       <Blob />
       <Scroll />
-      <div className="absolute h-full w-full z-[-1] overflow-hidden">
-      </div>
       <h1 className="text-8xl h-[70svh] flex flex-col justify-center self-center tracking-wide text-pretty max-w-lg leading-none mb-40">Because you deserve <span className="text-sky-500 leading-none font-san">the best</span></h1>
       <div className="h-1 w-[100svw] bg-sky-500 my-10"></div>
       <h2 id="projects" className="text-4xl mb-10 justify-start w-[50svw]">Projects</h2>
