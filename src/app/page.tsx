@@ -30,8 +30,10 @@ export default function Home() {
           <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
         </svg>
       </a>
-      <span className="absolute flex text-8xl top-[10svh] text-black shadow-[inset_-50px_-50px_100px_pink]">AURORA</span>
-      <h1 className="text-8xl h-[70svh] flex flex-col justify-center self-center tracking-wide text-pretty max-w-lg leading-none mb-40">Because you deserve <span className="text-sky-500 leading-none font-san">the best</span></h1>
+      <div className="flex flex-row gap-1">
+        <div className="flex flex-col text-7xl font-semibold justify-center align-center px-1 mb-40 mt-2 bg-yellow-500 text-neutral-900"><p>A</p><p>U</p><p>R</p><p>O</p><p>R</p><p>A</p></div>
+        <h1 className="text-8xl h-[70svh] flex flex-col justify-center self-center tracking-wide text-pretty max-w-lg leading-none mb-40">Because you deserve <span className="text-sky-500 leading-none font-san">the best</span></h1>
+      </div>
       <div className="h-1 w-[100svw] bg-sky-500 my-10"></div>
       <h2 id="projects" className="text-4xl mb-10 justify-start w-[50svw]">Projects</h2>
       <div className="w-100 grid grid-cols-2 gap-28 motion-safe:animate-move-bottom mb-10">
@@ -58,7 +60,7 @@ export default function Home() {
       <div className="h-1 w-[100svw] bg-sky-500 my-10"></div>
       <h2 id="resume" className="text-4xl justify-start w-[50svw] mb-10">Resume</h2>
       <div className="flex w-[60svw] flex-col gap-10 justify-items-center align-center z-10">
-        <div className="flex flex-col w-[80ch] bg-neutral-900/90 py-4 px-8 rounded-md justify-center justify-items-center self-center">
+        <div className="flex flex-col w-[80ch] bg-neutral-800/50 py-4 px-8 rounded-md justify-center justify-items-center self-center">
           <h3 className="text-xl mb-2">Work Experience</h3>
           <div className="h-1 w-full bg-yellow-500 mb-2"></div>
           <div className="flex flex-row gap-10 justify-start align-center">
@@ -66,7 +68,7 @@ export default function Home() {
             <p className="font-thin">2024-2069</p>
           </div>
         </div>
-        <div className="flex flex-col w-[80ch] bg-neutral-900/90 py-4 px-8 rounded-md justify-center self-center justify-self-center">
+        <div className="flex flex-col w-[80ch] bg-neutral-800/50 py-4 px-8 rounded-md justify-center self-center justify-self-center">
           <h3 className="text-xl mb-2">Education</h3>
           <div className="h-1 w-full bg-yellow-400 mb-2"></div>
           <div className="flex flex-row gap-10 justify-start align-center">
@@ -74,14 +76,14 @@ export default function Home() {
             <p className="font-thin">2021-2025</p>
           </div>
         </div>
-        <div className="flex flex-col w-[80ch] bg-neutral-900/90 py-4 px-8 rounded-md justify-center self-center justify-self-center">
+        <div className="flex flex-col w-[80ch] bg-neutral-800/50 py-4 px-8 rounded-md justify-center self-center justify-self-center">
           <h3 className="text-xl mb-2">Familiar technologies</h3>
-          <div className="h-1 w-full bg-yellow-300 mb-2 motion-safe:animate-pulse"></div>
+          <div className="h-1 w-full bg-yellow-300 mb-2"></div>
           <div className="flex flex-row gap-10 justify-start align-center">
             <p className="max-w-[80ch]">React, Nextjs, Tailwind, SCSS, Express, MySQL, PostgreSQL, Javascript, Typescript, Python, Pytorch, Tensorflow, Java, C, C++, PHP.</p>
           </div>
         </div>
-        <div className="flex flex-col w-[80ch] bg-neutral-900/90 py-4 px-8 rounded-md justify-center self-center justify-self-center">
+        <div className="flex flex-col w-[80ch] bg-neutral-800/50 py-4 px-8 rounded-md justify-center self-center justify-self-center">
           <h3 className="text-xl mb-2">Soft skills</h3>
           <div className="h-1 w-full bg-yellow-200 mb-2"></div>
           <div className="flex flex-row gap-10 justify-start align-center">
@@ -89,6 +91,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <a href="mailto:mail@tutanota.com" className="mt-20 rounded-xl bg-yellow-400 text-gray-700 hover:bg-yellow-300 active:text-gray-100 active:bg-yellow-500 duration-150 transition-all text-4xl font-semibold px-5 py-1 motion-safe:animate-pulse">Contact me</a>
     </>
   );
 }
