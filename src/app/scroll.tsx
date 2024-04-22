@@ -12,6 +12,9 @@ export default function Scroll() {
     let projectLink = document.querySelector("#project-link")
     projectLink.style.top = (document.querySelector('#projects').getBoundingClientRect().top / document.querySelector("footer").getBoundingClientRect().bottom) * 50.0 + 25.0 + "svh" // Return from 25 to 75 svh
 
+    let resumeLink = document.querySelector("#resume-link")
+    resumeLink.style.top = (document.querySelector('#resume').getBoundingClientRect().top / document.querySelector("footer").getBoundingClientRect().bottom) * 50.0 + 25.0 + "svh" // Return from 25 to 75 svh
+
     document.addEventListener("scroll", onScroll)
     return () => {
       document.removeEventListener("scroll", onScroll)
@@ -25,6 +28,7 @@ export default function Scroll() {
       </div>
       <a href="#top" className="fixed left-[90%] top-[25svh] hover:text-sky-500 transition duration-150">The Best</a>
       <a id="project-link" href="#projects" className="fixed left-[90%] hover:text-sky-500 transition duration-150">Projects</a>
+      <a id="resume-link" href="#resume" className="fixed left-[90%] hover:text-sky-500 transition duration-150">Resume</a>
     </>
   )
 }

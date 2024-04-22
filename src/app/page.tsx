@@ -25,10 +25,16 @@ export default function Home() {
     <>
       <Blob />
       <Scroll />
+      <a href="#projects" className="fixed w-10 h-10 z-50">
+        <svg className="fixed w-10 h-10 px-2 bottom-[10svh] motion-safe:animate-bounce transition duration-300 bg-black/50 rounded-3xl backdrop-blur-md hover:bg-sky-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+        </svg>
+      </a>
+      <span className="absolute flex text-8xl top-[10svh] text-black shadow-[inset_-50px_-50px_100px_pink]">AURORA</span>
       <h1 className="text-8xl h-[70svh] flex flex-col justify-center self-center tracking-wide text-pretty max-w-lg leading-none mb-40">Because you deserve <span className="text-sky-500 leading-none font-san">the best</span></h1>
       <div className="h-1 w-[100svw] bg-sky-500 my-10"></div>
       <h2 id="projects" className="text-4xl mb-10 justify-start w-[50svw]">Projects</h2>
-      <div className="w-100 grid grid-cols-2 gap-28 motion-safe:animate-move-bottom">
+      <div className="w-100 grid grid-cols-2 gap-28 motion-safe:animate-move-bottom mb-10">
         {projects.map((project: Project) => {
           return (
             <div className="w-50 max-h-[50svh] flex flex-col aspect-square justify-center items-center border-neutral-800 border-2 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-neutral-500 hover:scale-105 transition duration-300 motion-reduce:transition-none" key={project.id}>
@@ -48,6 +54,40 @@ export default function Home() {
             </div>
           )
         })}
+      </div>
+      <div className="h-1 w-[100svw] bg-sky-500 my-10"></div>
+      <h2 id="resume" className="text-4xl justify-start w-[50svw] mb-10">Resume</h2>
+      <div className="flex w-[60svw] flex-col gap-10 justify-items-center align-center z-10">
+        <div className="flex flex-col w-[80ch] bg-neutral-900/90 py-4 px-8 rounded-md justify-center justify-items-center self-center">
+          <h3 className="text-xl mb-2">Work Experience</h3>
+          <div className="h-1 w-full bg-yellow-500 mb-2"></div>
+          <div className="flex flex-row gap-10 justify-start align-center">
+            <p className="max-w-[80ch]">None really but yk yk yk yk</p>
+            <p className="font-thin">2024-2069</p>
+          </div>
+        </div>
+        <div className="flex flex-col w-[80ch] bg-neutral-900/90 py-4 px-8 rounded-md justify-center self-center justify-self-center">
+          <h3 className="text-xl mb-2">Education</h3>
+          <div className="h-1 w-full bg-yellow-400 mb-2"></div>
+          <div className="flex flex-row gap-10 justify-start align-center">
+            <p className="max-w-[80ch]">Bachelors of Computer Science at University XYZ</p>
+            <p className="font-thin">2021-2025</p>
+          </div>
+        </div>
+        <div className="flex flex-col w-[80ch] bg-neutral-900/90 py-4 px-8 rounded-md justify-center self-center justify-self-center">
+          <h3 className="text-xl mb-2">Familiar technologies</h3>
+          <div className="h-1 w-full bg-yellow-300 mb-2 motion-safe:animate-pulse"></div>
+          <div className="flex flex-row gap-10 justify-start align-center">
+            <p className="max-w-[80ch]">React, Nextjs, Tailwind, SCSS, Express, MySQL, PostgreSQL, Javascript, Typescript, Python, Pytorch, Tensorflow, Java, C, C++, PHP.</p>
+          </div>
+        </div>
+        <div className="flex flex-col w-[80ch] bg-neutral-900/90 py-4 px-8 rounded-md justify-center self-center justify-self-center">
+          <h3 className="text-xl mb-2">Soft skills</h3>
+          <div className="h-1 w-full bg-yellow-200 mb-2"></div>
+          <div className="flex flex-row gap-10 justify-start align-center">
+            <p className="max-w-[80ch]">Valuable communication skills, passionate learner, stress-resistant, laid-back.</p>
+          </div>
+        </div>
       </div>
     </>
   );
