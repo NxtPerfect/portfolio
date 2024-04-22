@@ -4,3 +4,4 @@
     - [x] This kind of works, but the offset is wrong, projects end up at 40% height, instead of 75, as they're near the bottom
 - [ ] When clicking contact me opens up email app with credentials already in
 - [ ] Main background as grid but distorted?
+- [ ] AURORA needs outline and transparent text
