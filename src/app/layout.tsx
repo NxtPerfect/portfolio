@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth scroll-p-[45%]">
       <body className={inter.className + ""}>
         <Navbar />
-        <div className="absolute w-full h-full bg-[url('/nnnoise.svg')] bg-neutral-900 opacity-15 contrast-150 brightness-[3]"></div>
+        <div className="absolute w-full h-full bg-[url('/nnnoise.svg')] bg-repeat bg-neutral-900 opacity-15 contrast-150 brightness-[3]"></div>
         <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-neutral-900">
           {children}
         </main>

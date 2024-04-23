@@ -59,13 +59,23 @@ const config: Config = {
             top: '0svh',
             transform: 'translateY(0)'
           }
+        },
+        'slide-right': {
+          from: {
+            transform: 'translateY(100svh)',
+            opacity: '0'
+          },
+          to: {
+            transform: 'translateY(0)'
+          }
         }
       },
       animation: {
         'move-bottom': 'move-bottom 1s ease .5s forwards',
         'move-left': 'move-left 30s linear .5s infinite',
         'move-right': 'move-right 30s linear .5s infinite',
-        'move-top': 'move-top 1s ease-out .5s forwards'
+        'move-top': 'move-top 1s ease-out .5s forwards',
+        'slide-right': 'slide-right .5s ease-in-out .75s forwards',
       },
     },
   },
