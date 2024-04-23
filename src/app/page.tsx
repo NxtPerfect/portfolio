@@ -1,8 +1,10 @@
+'use client';
 import Image from "next/image";
 import Link from "next/link";
 import Blob from "./blob";
 import Scroll from "./scroll";
-import { useState } from "react";
+import { motion } from "framer-motion";
+import Reveal from "./reveal";
 
 type Project = {
   id: number,
@@ -31,8 +33,8 @@ export default function Home() {
         </svg>
       </a>
       <div className="flex flex-row gap-1">
-        <div className="flex flex-col text-7xl font-semibold justify-center align-center px-1 mb-40 mt-2 bg-yellow-500 text-neutral-900"><p>A</p><p>U</p><p>R</p><p>O</p><p>R</p><p>A</p></div>
-        <h1 className="text-8xl h-[70svh] flex flex-col justify-center self-center tracking-wide text-pretty max-w-lg leading-none mb-40">Because you deserve <span className="text-sky-500 leading-none font-san">the best</span></h1>
+        <Reveal><div className="h-[82%] flex flex-col text-7xl font-semibold justify-center align-center px-1 mb-40 mt-2 bg-yellow-500 text-neutral-900"><p>A</p><p>U</p><p>R</p><p>O</p><p>R</p><p>A</p></div></Reveal>
+        <Reveal><h1 className="text-8xl h-[70svh] flex flex-col justify-center self-center tracking-wide text-pretty max-w-lg leading-none mb-40">Because you deserve <span className="text-sky-500 leading-none font-san">the best</span></h1></Reveal>
       </div>
       <div className="h-1 w-[100svw] bg-sky-500 my-10"></div>
       <h2 id="projects" className="text-4xl mb-10 justify-start w-[50svw]">Projects</h2>
@@ -91,7 +93,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <a href="mailto:mail@tutanota.com" className="mt-20 rounded-xl bg-yellow-400 text-gray-700 hover:bg-yellow-300 active:text-gray-100 active:bg-yellow-500 duration-150 transition-all text-4xl font-semibold px-5 py-1 motion-safe:animate-pulse">Contact me</a>
+      <motion.a initial={{ x: -1000 }} whileInView={{ x: 0 }} viewport={{ once: true }} whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} transition={{ duration: 0.2 }} href="mailto:mail@tutanota.com" className="mt-20 rounded-xl bg-yellow-400 text-gray-700 hover:bg-yellow-300 active:text-gray-100 active:bg-yellow-500 duration-150 transition-all text-4xl font-semibold px-5 py-1">Contact me</motion.a>
     </>
   );
 }
