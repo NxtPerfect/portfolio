@@ -48,12 +48,24 @@ const config: Config = {
             right: '120svw',
             transform: 'rotate(360deg)',
           }
+        },
+        'move-top': {
+          from: {
+            color: 'tranparent',
+            top: '-40svh',
+            transform: 'translateY(-200svh)',
+          },
+          to: {
+            top: '0svh',
+            transform: 'translateY(0)'
+          }
         }
       },
       animation: {
         'move-bottom': 'move-bottom 1s ease .5s forwards',
         'move-left': 'move-left 30s linear .5s infinite',
         'move-right': 'move-right 30s linear .5s infinite',
+        'move-top': 'move-top 1s ease-out .5s forwards'
       },
     },
   },

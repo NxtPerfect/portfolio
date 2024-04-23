@@ -2,6 +2,12 @@
 - [x] add projects from array
 - [x] organize the scroll bar links to where they're in the project
     - [x] This kind of works, but the offset is wrong, projects end up at 40% height, instead of 75, as they're near the bottom
-- [ ] When clicking contact me opens up email app with credentials already in
+- [x] When clicking contact me opens up email app with credentials already in
+- [x] AURORA needs outline and transparent text
 - [ ] Main background as grid but distorted?
-- [ ] AURORA needs outline and transparent text
+- [/] animations for when elements appear on page
+    - [ ] animations for projects
+    - [ ] div element hiding the text
+- [ ] animations when elements enter the viewport for the first time
+- [ ] images for my projects
+- [ ] possibly images for different technologies, rather than writing them in text in the projects, still should be left as text on the resume part, as to be more professional?
