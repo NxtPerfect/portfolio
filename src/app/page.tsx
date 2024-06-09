@@ -16,12 +16,13 @@ type Project = {
 }
 
 export default function Home() {
-  let id = 0
-  const vocab_master: Project = { id: id++, name: 'Vocab-Master', description: 'Platform to learn foreign language vocabulary. Uses flashcards and daily streak to enhance learning process.', link: 'https://github.com/NxtPerfect/Vocab-Master', technologies: ['React', 'Express', 'MySQL', 'SCSS', 'Typescript'], image: '/test.jpg' }
+  let id = 0;
+  const vocab_master: Project = { id: id++, name: 'Vocab-Master', description: 'Platform to learn foreign language vocabulary. Uses flashcards and daily streak to enhance learning process.', link: 'https://github.com/NxtPerfect/Vocab-Master', technologies: ['React', 'Express', 'MySQL', 'SCSS', 'Typescript'], image: '/test.jpg' };
   const goth_todo: Project = { id: id++, name: 'Goth-Todo', description: 'Simple todo app.', link: 'https://github.com/NxtPerfect/Goth-Todo', technologies: ['Golang', 'Templ', 'HTMX', 'Tailwind'], image: "/test.jpg" }
   const portfolio: Project = { id: id++, name: 'Portfolio', description: 'Portfolio website showing off my work and skills as frontend web developer.', link: 'https://github.com/NxtPerfect/Portfolio', technologies: ['Nextjs', 'Tailwind', 'Typescript'], image: "/test.jpg" }
-  const co2emissions: Project = { id: id++, name: "CO2 Emissions Prediction USA", description: 'Pytorch AI model that predicts future emissions based on sector, fuel type, state and previous years using open source dataset.', link: 'https://github.com/NxtPerfect/co2emissions', technologies: ['Pytorch', 'Python'], image: "/test.jpg" }
-  const projects: Array<Project> = [vocab_master, goth_todo, portfolio, co2emissions]
+  const co2emissions: Project = { id: id++, name: "CO2 Emissions Prediction USA", description: 'Pytorch AI model that predicts future emissions based on sector, fuel type, state and previous years using open source dataset.', link: 'https://github.com/NxtPerfect/co2emissions', technologies: ['Pytorch', 'Python'], image: "/test.jpg" };
+  const projects: Array<Project> = [vocab_master, goth_todo, portfolio, co2emissions];
+  const name: String = "Hazel";
 
 
   return (
@@ -34,7 +35,11 @@ export default function Home() {
         </svg>
       </a>
       <div className="flex flex-row gap-1">
-        <Reveal><div className="h-[82%] flex flex-col text-7xl font-semibold justify-center align-center px-1 mb-40 mt-2 bg-yellow-500 text-neutral-900"><p>A</p><p>U</p><p>R</p><p>O</p><p>R</p><p>A</p></div></Reveal>
+        <Reveal><div className="h-[82%] flex flex-col text-7xl font-semibold justify-center align-center px-1 mb-40 mt-2 bg-yellow-500 text-neutral-900">
+          {name.split('').map((char, idx) => {
+            return (<p key={idx}>{char.toUpperCase()}</p>)
+          })}
+        </div></Reveal>
         <h1 className="text-8xl h-[70svh] flex flex-col justify-center self-center tracking-wide text-pretty max-w-lg leading-none mb-40 overflow-hidden motion-safe:animate-slide-right transition">Because you deserve <span className="text-sky-500 leading-none font-san">the best</span></h1>
       </div>
       <div className="h-1 w-[100svw] bg-sky-500 my-10"></div>
