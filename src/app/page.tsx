@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Blob from "./blob";
 import Scroll from "./scroll";
-import { motion } from "framer-motion";
 import Reveal from "./reveal";
 import Contact from "./contact";
 
@@ -20,8 +19,10 @@ export default function Home() {
   const vocab_master: Project = { id: id++, name: 'Vocab-Master', description: 'Platform to learn foreign language vocabulary. Uses flashcards and daily streak to enhance learning process.', link: 'https://github.com/NxtPerfect/Vocab-Master', technologies: ['React', 'Express', 'MySQL', 'SCSS', 'Typescript'], image: '/test.jpg' };
   const goth_todo: Project = { id: id++, name: 'Goth-Todo', description: 'Simple todo app.', link: 'https://github.com/NxtPerfect/Goth-Todo', technologies: ['Golang', 'Templ', 'HTMX', 'Tailwind'], image: "/test.jpg" }
   const portfolio: Project = { id: id++, name: 'Portfolio', description: 'Portfolio website showing off my work and skills as frontend web developer.', link: 'https://github.com/NxtPerfect/Portfolio', technologies: ['Nextjs', 'Tailwind', 'Typescript'], image: "/test.jpg" }
-  const co2emissions: Project = { id: id++, name: "CO2 Emissions Prediction USA", description: 'Pytorch AI model that predicts future emissions based on sector, fuel type, state and previous years using open source dataset.', link: 'https://github.com/NxtPerfect/co2emissions', technologies: ['Pytorch', 'Python'], image: "/test.jpg" };
-  const projects: Array<Project> = [vocab_master, goth_todo, portfolio, co2emissions];
+  const heartFailureAnalysis: Project = { id: id++, name: "Heart Failure Data Analysis", description: "Using prebuilt kaggle database I analyzed data relations between heart failure and other parameters. I compared different prediction models to get 95% accuracy on heart failure prediction.", link: "https://github.com/NxtPerfect/heartfailureanalysis", technologies: ['Python', 'Pandas', 'Scikit-learn'], image: "/test.jpg" };
+  const isSameAuthor: Project = { id: id++, name: "Is Same Author", description: "Neural Network given message set and untrained message predicts, whether the new message is from the same author as trained data.", link: "https://github.com/NxtPerfect/is-same-author", technologies: ['Python', 'Tensorflow', 'Pandas'], image: "/test.jpg" };
+  const hackerNewsPicker: Project = { id: id++, name: "Hacker News Picker", description: "Tool that combines web scraping of hacker news website with Neural Network categorizing each article and another Neural Network that rates how interesting article can be for the user.", link: "https://github.com/NxtPerfect/hacker-news-picker", technologies: ['Python', 'Pytorch', 'Pandas', 'BeautifulSoup'], image: "/test.jpg" };
+  const projects: Array<Project> = [vocab_master, goth_todo, portfolio, heartFailureAnalysis, isSameAuthor, hackerNewsPicker];
   const name: String = "Hazel";
 
 
