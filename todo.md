@@ -11,3 +11,4 @@
 - [ ] animations when elements enter the viewport for the first time
 - [ ] images for my projects
 - [ ] possibly images for different technologies, rather than writing them in text in the projects, still should be left as text on the resume part, as to be more professional?
+- [ ] Use database for projects instead of list...
