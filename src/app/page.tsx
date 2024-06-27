@@ -47,9 +47,9 @@ export default function Home() {
       <div className="h-1 w-[100svw] bg-sky-500 my-10"></div>
       <h2 id="projects" className="text-4xl mb-10 justify-start w-[50svw]">Projects</h2>
       <div className="w-100 grid grid-cols-2 gap-28 mb-10">
-        {projects.map((project: Project) => {
+        {projects.map((project: Project, idx: number) => {
           return (
-            <div className="w-50 max-h-[50svh] flex flex-col aspect-square justify-center items-center border-neutral-800 border-2 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-neutral-500 hover:scale-105 transition duration-300 motion-reduce:transition-none z-10" key={project.id}>
+            <div key={idx} className="w-50 max-h-[50svh] flex flex-col aspect-square justify-center items-center border-neutral-800 border-2 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-neutral-500 hover:scale-105 transition duration-300 motion-reduce:transition-none z-10" key={project.id}>
               <Image src={project.image} width={500} height={500} quality={50} alt="Picture of project1" className="object-cover max-w-50" />
               <div className="h-full w-full flex flex-col bg-neutral-950/75 justify-start items-center pt-4 backdrop-blur-md">
                 <div className="w-[40ch] justify-start items-center flex flex-row mb-1 gap-4">
