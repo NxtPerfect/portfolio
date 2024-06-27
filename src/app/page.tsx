@@ -60,7 +60,7 @@ export default function Home() {
                     </svg>
                     Github</Link>
                 </div>
-                <div className="flex flex-row gap-2 font-extralight text-sm mb-2">{project.technologies.map((tech: string) => { return <p className="w-fit justify-center align-center bg-neutral-800/90 p-2 rounded-md">{tech}</p> })}</div>
+                <div className="flex flex-row gap-2 font-extralight text-sm mb-2">{project.technologies.map((tech: string, idx: number) => { return <p key={idx} className="w-fit justify-center align-center bg-neutral-800/90 p-2 rounded-md">{tech}</p> })}</div>
                 <p className="font-light w-[40ch] line-clamp-5">{project.description}</p>
               </div>
             </div>
