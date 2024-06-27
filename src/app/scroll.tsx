@@ -5,18 +5,18 @@ export default function Scroll() {
   const [scroll, setScroll] = useState(0)
   useEffect(() => {
     function onScroll() {
-      let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-      let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      setScroll(((winScroll / height) * 100).toFixed(2));
+      let winScroll: number = document.body.scrollTop || document.documentElement.scrollTop;
+      let height: number = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      setScroll(Number.parseInt(((winScroll / height) * 100).toFixed(2)));
     }
-    let projectLink = document.querySelector("#project-link")
-    projectLink.style.top = (document.querySelector('#projects').getBoundingClientRect().top / document.querySelector("footer").getBoundingClientRect().bottom) * 50.0 + 25.0 + "svh" // Return from 25 to 75 svh
+    let projectLink: HTMLElement = document.querySelector("#project-link") as HTMLElement
+    projectLink.style.top = (document.querySelector('#projects')!.getBoundingClientRect().top / document.querySelector("footer")!.getBoundingClientRect().bottom) * 50.0 + 25.0 + "svh" // Return from 25 to 75 svh
 
-    let resumeLink = document.querySelector("#resume-link")
-    resumeLink.style.top = (document.querySelector('#resume').getBoundingClientRect().top / document.querySelector("footer").getBoundingClientRect().bottom) * 50.0 + 25.0 + "svh" // Return from 25 to 75 svh
+    let resumeLink: HTMLElement = document.querySelector("#resume-link") as HTMLElement
+    resumeLink.style.top = (document.querySelector('#resume')!.getBoundingClientRect().top / document.querySelector("footer")!.getBoundingClientRect().bottom) * 50.0 + 25.0 + "svh" // Return from 25 to 75 svh
 
-    let contactLink = document.querySelector("#contact-link")
-    contactLink.style.top = (document.querySelector("#contact").getBoundingClientRect().top / document.querySelector("footer").getBoundingClientRect().bottom) * 50.0 + 25.0 + "svh"
+    let contactLink: HTMLElement = document.querySelector("#contact-link") as HTMLElement
+    contactLink.style.top = (document.querySelector("#contact")!.getBoundingClientRect().top / document.querySelector("footer")!.getBoundingClientRect().bottom) * 50.0 + 25.0 + "svh"
 
     document.addEventListener("scroll", onScroll)
     return () => {
