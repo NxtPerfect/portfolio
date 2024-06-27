@@ -21,7 +21,7 @@ export default function Home() {
   const portfolio: Project = { id: id++, name: 'Portfolio', description: 'Portfolio website showing off my work and skills as frontend web developer.', link: 'https://github.com/NxtPerfect/Portfolio', technologies: ['Nextjs', 'Tailwind', 'Typescript'], image: "/test.jpg" }
   const automotiveWorkshopManagementSystem: Project = { id: id++, name: 'Automotive Workshop Management System', description: 'Website to help with managing automotive workshop, current repairs, ordering parts and assigning work.', link: 'https://github.com/NxtPerfect/automotive-workshop-management-system', technologies: ['Nextjs', 'Tailwind', 'Typescript', 'SQLite', 'Prisma'], image: "/test.jpg" }
   const heartFailureAnalysis: Project = { id: id++, name: "✨Heart Failure Data Analysis", description: "Using prebuilt kaggle database I analyzed data relations between heart failure and other parameters. I compared different prediction models to get 95% accuracy on heart failure prediction.", link: "https://github.com/NxtPerfect/heartfailureanalysis", technologies: ['Python', 'Pandas', 'Scikit-learn'], image: "/test.jpg" };
-  const isSameAuthor: Project = { id: id++, name: "✨Is Same Author (WIP)", description: "Neural Network given message set and untrained message predicts, whether the new message is from the same author as trained data.", link: "https://github.com/NxtPerfect/is-same-author", technologies: ['Python', 'Tensorflow', 'Pandas'], image: "/test.jpg" };
+  const isSameAuthor: Project = { id: id++, name: "✨Is Same Author", description: "Neural Network given message set and untrained message predicts, whether the new message is from the same author as trained data.", link: "https://github.com/NxtPerfect/is-same-author", technologies: ['Python', 'Tensorflow', 'Pandas'], image: "/test.jpg" };
   const hackerNewsPicker: Project = { id: id++, name: "✨Hacker News Picker", description: "Tool that combines web scraping of hacker news website with Neural Network categorizing each article and another Neural Network that rates how interesting article can be for the user.", link: "https://github.com/NxtPerfect/hacker-news-picker", technologies: ['Python', 'Pytorch', 'Pandas', 'BeautifulSoup'], image: "/test.jpg" };
   const projects: Array<Project> = [vocab_master, goth_todo, portfolio, automotiveWorkshopManagementSystem, heartFailureAnalysis, isSameAuthor, hackerNewsPicker];
   const name: String = "Hazel";
@@ -67,6 +67,11 @@ export default function Home() {
           )
         })}
       </div>
+      <p className="text-white/50 z-10 w-fit flex flew-row gap-2 mt-16 mb-16">...and many more found at <Link className="flex flex-row gap-1 underline text-sky-500 hover:text-sky-400 active:text-sky-600 transition duration-[50] motion-reduce:transition-none" href="https://github.com/nxtperfect/">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+        </svg>
+        My GitHub Profile</Link></p>
       <div className="h-1 w-[100svw] bg-green-500 my-10"></div>
       <h2 id="resume" className="text-4xl justify-start w-[50svw] mb-10">Resume</h2>
       <div className="flex w-[60svw] flex-col gap-10 justify-items-center align-center z-10">
@@ -83,7 +88,12 @@ export default function Home() {
           <div className="h-1 w-full bg-yellow-400 mb-2"></div>
           <div className="flex flex-row gap-10 justify-start align-center">
             <p className="text-white/50 w-[15%]">2021-2025</p>
-            <p className="max-w-[80ch]">Bachelors of Computer Science at <a className="underline text-sky-500 hover:text-sky-400" href="https://university.xyz/">University XYZ</a></p>
+            <p className="max-w-[80ch] flex flex-row gap-2">Bachelors of Computer Science at <Link className="flex flex-row gap-1 underline text-sky-500 hover:text-sky-400" href="https://university.xyz/">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+              </svg>
+              University XYZ
+            </Link></p>
           </div>
         </div>
         <div className="flex flex-col w-[80ch] bg-neutral-800/50 py-4 px-8 rounded-md justify-center self-center justify-self-center">
@@ -111,8 +121,8 @@ export default function Home() {
       </div>
       <Contact />
       <div className="h-1 w-[100svw] bg-red-500 my-10"></div>
-      <h2 id="roadmap" className="text-4xl justify-start w-[50svw] mb-10">Future roadmap:</h2>
-      <p className="text-sm">Here i&apos;ll put a nice line with all the stuff i want to do in the future</p>
+      <h2 id="roadmap" className="text-4xl justify-start w-[50svw] mb-10 z-10">Future roadmap:</h2>
+      <p className="text-sm z-10">Here i&apos;ll put a nice line with all the stuff i want to do in the future</p>
     </>
   );
 }
