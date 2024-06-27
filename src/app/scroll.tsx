@@ -33,6 +33,7 @@ export default function Scroll() {
       <a id="project-link" href="#projects" className="fixed right-[6%] hover:text-sky-500 transition duration-150">Projects</a>
       <a id="resume-link" href="#resume" className="fixed right-[6%] hover:text-sky-500 transition duration-150">Resume</a>
       <a id="contact-link" href="#contact" className="fixed right-[6%] hover:text-sky-500 transition duration-150">Contact me</a>
+      <a id="roadmap-link" href="#roadmap" className="fixed right-[6%] hover:text-sky-500 transition duration-150">Future roadmap</a>
     </>
   )
 }

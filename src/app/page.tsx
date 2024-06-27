@@ -74,7 +74,7 @@ export default function Home() {
           <h3 className="text-xl mb-2">Work Experience</h3>
           <div className="h-1 w-full bg-yellow-500 mb-2"></div>
           <div className="flex flex-row gap-10 justify-start align-center">
-            <p className="font-thin w-[15%]">2025-?</p>
+            <p className="text-white/50 w-[15%]">2025-?</p>
             <p className="max-w-[80ch]">This ✨journey could begin with you</p>
           </div>
         </div>
@@ -82,7 +82,7 @@ export default function Home() {
           <h3 className="text-xl mb-2">Education</h3>
           <div className="h-1 w-full bg-yellow-400 mb-2"></div>
           <div className="flex flex-row gap-10 justify-start align-center">
-            <p className="font-thin w-[15%]">2021-2025</p>
+            <p className="text-white/50 w-[15%]">2021-2025</p>
             <p className="max-w-[80ch]">Bachelors of Computer Science at <a className="underline text-sky-500 hover:text-sky-400" href="https://university.xyz/">University XYZ</a></p>
           </div>
         </div>
@@ -97,8 +97,8 @@ export default function Home() {
             <p className="text-lg">General:</p>
             <p className="ml-4 max-w-[80ch] mb-2">Java, ⭐️C, C++, PHP, Rust, Elixir</p>
             <p className="text-lg">Tooling:</p>
-            <p className="ml-4 max-w-[80ch] mb-2">Git, Linux, Neovim, Vim, Docker, Markdown, Figma</p>
-            <p className='font-thin text-sm'>⭐️ - prefered technologies</p>
+            <p className="ml-4 max-w-[80ch] mb-4">Git, Linux, Neovim, Vim, Docker, Markdown, Figma</p>
+            <p className='text-sm'>⭐️ - prefered technologies</p>
           </div>
         </div>
         <div className="flex flex-col w-[80ch] bg-neutral-800/50 py-4 px-8 rounded-md justify-center self-center justify-self-center">
@@ -112,7 +112,7 @@ export default function Home() {
       <Contact />
       <div className="h-1 w-[100svw] bg-red-500 my-10"></div>
       <h2 id="roadmap" className="text-4xl justify-start w-[50svw] mb-10">Future roadmap:</h2>
-      <p className="font-thin text-sm">Here i&apos;ll put a nice line with all the stuff i want to do in the future</p>
+      <p className="text-sm">Here i&apos;ll put a nice line with all the stuff i want to do in the future</p>
     </>
   );
 }

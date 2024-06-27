@@ -11,7 +11,7 @@ export default function Blob() {
         left: `${e.pageX}px`,
         top: `${e.pageY - window.scrollY}px`
       }, {
-        duration: 3000, fill: "forwards"
+        duration: 1000, fill: "forwards"
       }
       )
     }
