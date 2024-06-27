@@ -20,8 +20,8 @@ export default function Home() {
   const goth_todo: Project = { id: id++, name: 'Goth-Todo', description: 'Simple todo app.', link: 'https://github.com/NxtPerfect/Goth-Todo', technologies: ['Golang', 'Templ', 'HTMX', 'Tailwind'], image: "/test.jpg" }
   const portfolio: Project = { id: id++, name: 'Portfolio', description: 'Portfolio website showing off my work and skills as frontend web developer.', link: 'https://github.com/NxtPerfect/Portfolio', technologies: ['Nextjs', 'Tailwind', 'Typescript'], image: "/test.jpg" }
   const automotiveWorkshopManagementSystem: Project = { id: id++, name: 'Automotive Workshop Management System', description: 'Website to help with managing automotive workshop, current repairs, ordering parts and assigning work.', link: 'https://github.com/NxtPerfect/automotive-workshop-management-system', technologies: ['Nextjs', 'Tailwind', 'Typescript', 'SQLite', 'Prisma'], image: "/test.jpg" }
-  const heartFailureAnalysis: Project = { id: id++, name: "Heart Failure Data Analysis", description: "Using prebuilt kaggle database I analyzed data relations between heart failure and other parameters. I compared different prediction models to get 95% accuracy on heart failure prediction.", link: "https://github.com/NxtPerfect/heartfailureanalysis", technologies: ['Python', 'Pandas', 'Scikit-learn'], image: "/test.jpg" };
-  const isSameAuthor: Project = { id: id++, name: "✨Is Same Author", description: "Neural Network given message set and untrained message predicts, whether the new message is from the same author as trained data.", link: "https://github.com/NxtPerfect/is-same-author", technologies: ['Python', 'Tensorflow', 'Pandas'], image: "/test.jpg" };
+  const heartFailureAnalysis: Project = { id: id++, name: "✨Heart Failure Data Analysis", description: "Using prebuilt kaggle database I analyzed data relations between heart failure and other parameters. I compared different prediction models to get 95% accuracy on heart failure prediction.", link: "https://github.com/NxtPerfect/heartfailureanalysis", technologies: ['Python', 'Pandas', 'Scikit-learn'], image: "/test.jpg" };
+  const isSameAuthor: Project = { id: id++, name: "✨Is Same Author (WIP)", description: "Neural Network given message set and untrained message predicts, whether the new message is from the same author as trained data.", link: "https://github.com/NxtPerfect/is-same-author", technologies: ['Python', 'Tensorflow', 'Pandas'], image: "/test.jpg" };
   const hackerNewsPicker: Project = { id: id++, name: "✨Hacker News Picker", description: "Tool that combines web scraping of hacker news website with Neural Network categorizing each article and another Neural Network that rates how interesting article can be for the user.", link: "https://github.com/NxtPerfect/hacker-news-picker", technologies: ['Python', 'Pytorch', 'Pandas', 'BeautifulSoup'], image: "/test.jpg" };
   const projects: Array<Project> = [vocab_master, goth_todo, portfolio, automotiveWorkshopManagementSystem, heartFailureAnalysis, isSameAuthor, hackerNewsPicker];
   const name: String = "Hazel";
@@ -50,7 +50,7 @@ export default function Home() {
         {projects.map((project: Project, idx: number) => {
           return (
             <div key={idx} className="w-50 max-h-[50svh] flex flex-col aspect-square justify-center items-center border-neutral-800 border-2 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-neutral-500 hover:scale-105 transition duration-300 motion-reduce:transition-none z-10">
-              <Image src={project.image} width={500} height={300} quality={50} alt="Picture of project1" className="object-cover max-w-50" />
+              <Image src={project.image} width={500} height={200} quality={50} alt="Picture of project1" className="object-cover max-w-50" />
               <div className="h-full w-full flex flex-col bg-neutral-950/75 justify-start items-center pt-4 backdrop-blur-md">
                 <div className="w-[40ch] justify-start items-center flex flex-row mb-1 gap-4">
                   <h2 className="font-bold text-xl w-fit text-pretty">{project.name}</h2>
@@ -67,30 +67,38 @@ export default function Home() {
           )
         })}
       </div>
-      <div className="h-1 w-[100svw] bg-sky-500 my-10"></div>
+      <div className="h-1 w-[100svw] bg-green-500 my-10"></div>
       <h2 id="resume" className="text-4xl justify-start w-[50svw] mb-10">Resume</h2>
       <div className="flex w-[60svw] flex-col gap-10 justify-items-center align-center z-10">
         <div className="flex flex-col w-[80ch] bg-neutral-800/50 py-4 px-8 rounded-md justify-center justify-items-center self-center">
           <h3 className="text-xl mb-2">Work Experience</h3>
           <div className="h-1 w-full bg-yellow-500 mb-2"></div>
           <div className="flex flex-row gap-10 justify-start align-center">
-            <p className="max-w-[80ch]">None really but yk yk yk yk</p>
-            <p className="font-thin">2024-2069</p>
+            <p className="font-thin w-[15%]">2025-?</p>
+            <p className="max-w-[80ch]">This ✨journey could begin with you</p>
           </div>
         </div>
         <div className="flex flex-col w-[80ch] bg-neutral-800/50 py-4 px-8 rounded-md justify-center self-center justify-self-center">
           <h3 className="text-xl mb-2">Education</h3>
           <div className="h-1 w-full bg-yellow-400 mb-2"></div>
           <div className="flex flex-row gap-10 justify-start align-center">
-            <p className="max-w-[80ch]">Bachelors of Computer Science at University XYZ</p>
-            <p className="font-thin">2021-2025</p>
+            <p className="font-thin w-[15%]">2021-2025</p>
+            <p className="max-w-[80ch]">Bachelors of Computer Science at <a className="underline text-sky-500 hover:text-sky-400" href="https://university.xyz/">University XYZ</a></p>
           </div>
         </div>
         <div className="flex flex-col w-[80ch] bg-neutral-800/50 py-4 px-8 rounded-md justify-center self-center justify-self-center">
           <h3 className="text-xl mb-2">Familiar technologies</h3>
           <div className="h-1 w-full bg-yellow-300 mb-2"></div>
-          <div className="flex flex-row gap-10 justify-start align-center">
-            <p className="max-w-[80ch]">React, Nextjs, Tailwind, SCSS, Express, MySQL, PostgreSQL, Javascript, Typescript, Nodejs, Bun, Python, Pytorch, Tensorflow, Java, C, C++, PHP.</p>
+          <div className="flex flex-col justify-start align-center">
+            <p className="text-lg">Web:</p>
+            <p className="ml-4 max-w-[80ch] mb-2">⭐️React, ⭐️Nextjs, ⭐️Tailwind, SCSS, HTML, CSS, Express, MySQL, PostgreSQL, ⭐️SQLite, Javascript, Typescript, Nodejs, Bun</p>
+            <p className="text-lg">ML:</p>
+            <p className="ml-4 max-w-[80ch] mb-2">Python, Numpy, Pandas, Polars, ⭐️Pytorch, Tensorflow, Scikit-learn</p>
+            <p className="text-lg">General:</p>
+            <p className="ml-4 max-w-[80ch] mb-2">Java, ⭐️C, C++, PHP, Rust, Elixir</p>
+            <p className="text-lg">Tooling:</p>
+            <p className="ml-4 max-w-[80ch] mb-2">Git, Linux, Neovim, Vim, Docker, Markdown, Figma</p>
+            <p className='font-thin text-sm'>⭐️ - prefered technologies</p>
           </div>
         </div>
         <div className="flex flex-col w-[80ch] bg-neutral-800/50 py-4 px-8 rounded-md justify-center self-center justify-self-center">
@@ -102,6 +110,9 @@ export default function Home() {
         </div>
       </div>
       <Contact />
+      <div className="h-1 w-[100svw] bg-red-500 my-10"></div>
+      <h2 id="roadmap" className="text-4xl justify-start w-[50svw] mb-10">Future roadmap:</h2>
+      <p className="font-thin text-sm">Here i'll put a nice line with all the stuff i want to do in the future</p>
     </>
   );
 }
