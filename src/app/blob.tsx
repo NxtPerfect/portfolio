@@ -7,7 +7,7 @@ export default function Blob() {
     function moveBlob(e: any) {
       let blob = document.getElementById("blob")
       // move
-      blob.animate({
+      blob?.animate({
         left: `${e.pageX}px`,
         top: `${e.pageY - window.scrollY}px`
       }, {
