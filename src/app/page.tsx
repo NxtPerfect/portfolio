@@ -112,7 +112,7 @@ export default function Home() {
       <Contact />
       <div className="h-1 w-[100svw] bg-red-500 my-10"></div>
       <h2 id="roadmap" className="text-4xl justify-start w-[50svw] mb-10">Future roadmap:</h2>
-      <p className="font-thin text-sm">Here i'll put a nice line with all the stuff i want to do in the future</p>
+      <p className="font-thin text-sm">Here i&aposll put a nice line with all the stuff i want to do in the future</p>
     </>
   );
 }
