@@ -18,6 +18,9 @@ export default function Scroll() {
     let contactLink: HTMLElement = document.querySelector("#contact-link") as HTMLElement
     contactLink.style.top = (document.querySelector("#contact")!.getBoundingClientRect().top / document.querySelector("footer")!.getBoundingClientRect().bottom) * 50.0 + 25.0 + "svh"
 
+    let roadmapLink: HTMLElement = document.querySelector("#roadmap-link") as HTMLElement
+    roadmapLink.style.top = (document.querySelector("#roadmap")!.getBoundingClientRect().top / document.querySelector("footer")!.getBoundingClientRect().bottom) * 50.0 + 25.0 + "svh"
+
     document.addEventListener("scroll", onScroll)
     return () => {
       document.removeEventListener("scroll", onScroll)
