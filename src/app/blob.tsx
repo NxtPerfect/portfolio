@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 export default function Blob() {
   // Currently broken
   useEffect(() => {
-    function moveBlob(e) {
+    function moveBlob(e: any) {
       let blob = document.getElementById("blob")
       // move
       blob.animate({
