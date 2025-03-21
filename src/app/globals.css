@@ -15,9 +15,10 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --text-h1: 4rem;
-  --text-h2: 2.5rem;
-  --text-p: 1.5rem;
+  --text-h1: 6rem;
+  --text-h2: 3.5rem;
+  --text-p: 2.5rem;
+  --text-small-p: 1.25rem;
 }
 
 @media (prefers-color-scheme: dark) {
