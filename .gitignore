@@ -38,3 +38,4 @@ next-env.d.ts
 # images
 public/*.jpg
 public/*.png
+TODO.md
