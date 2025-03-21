@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+<<<<<<< HEAD
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./navbar";
@@ -9,6 +10,19 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Aurora Portfolio",
   description: "Portfolio of frontend web developer.",
+=======
+import { Playfair_Display } from "next/font/google";
+import "./globals.css";
+
+const playfair = Playfair_Display({
+  preload: true,
+  subsets: ["latin"],
+})
+
+export const metadata: Metadata = {
+  title: "Hazel's Portfolio",
+  description: "Simple, minimalistic, to the point.",
+>>>>>>> version2
 };
 
 export default function RootLayout({
@@ -17,6 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+<<<<<<< HEAD
     <html lang="en" className="scroll-smooth scroll-p-[45%]">
       <body className={inter.className + ""}>
         <Navbar />
@@ -25,6 +40,13 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+=======
+    <html lang="en">
+      <body
+        className={`${playfair.className} antialiased`}
+      >
+        {children}
+>>>>>>> version2
       </body>
     </html>
   );

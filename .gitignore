@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -39,3 +40,10 @@ next-env.d.ts
 public/*.jpg
 public/*.png
 TODO.md
+=======
+TODO.md
+node_modules/
+.next/
+.git/
+bun.lockb
+>>>>>>> version2
